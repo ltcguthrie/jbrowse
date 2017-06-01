@@ -311,7 +311,7 @@ _renderVerticalScrollBar: function() {
         'div',
         {
             className: 'vertical_scrollbar',
-            style: { position: 'fixed',
+            style: { position: 'absolute',
                      right: '0px',
                      bottom: '0px',
                      height: '100%',
@@ -319,7 +319,7 @@ _renderVerticalScrollBar: function() {
                      zIndex: 1000
                    }
         },
-        this.elem
+        this.browser.container
     );
 
     var positionMarker = dojo.create(
